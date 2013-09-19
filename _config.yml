@@ -5,5 +5,5 @@ pygments: true
 #relative_permalinks: false
 permalink: none
 
-url: "http://scottdover.github.io/"
-baseurl: ""
+#url: "http://scottdover.github.io/"
+baseurl: "/"
