@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "2 CodeIgniter Tweaks To Improve Workflow"
+date:   2013-09-11 20:05:38
+---
+<h2>2 CodeIgniter Tweaks To Improve Workflow</h2>
+<p>
+	CodeIgniter is one of the many tools we use at <a href="http://madmonkinteractive.com" external>MadMonk</a> when building a web app. For those not in the know, CodeIgniter is a lightweight PHP framework built on the principles of the now well-known <a href="http://en.wikipedia.org/wiki/Model?view?controller">MVC</a> design pattern.
+</p>
+<p>
+	Having worked with CodeIgniter for quite some time, there are many things I've come to love (i.e. The Active Record class) that make CodeIgniter fast and easy to work with. However, there are other frameworks out there (I'm looking at you, Ruby On Rails) that make CodeIgniter feel somewhat cumbersome. Here are two problems I've encountered and the solutions that worked best for me. 
+</p>
+<h3>Controller / Model Naming Collisions</h3>
+<p>
+   Imagine you wanted to have a url path something like <code>domain.com/events</code>. Naturally, you'd want to have a controller named <code>Events</code> and a model named <code>Events</code>. Obviously, this is a problem as you can't have two classes named the same thing. CodeIgniter's built in way of "handling" the situation is to append <code>_model</code> to the model. However, this leads to code that is not quite as clean. The solution: modify your controller to have a <code>_controller</code> suffix instead.
+</p>
+
+<script type="text/javascript" src="https://gist.github.com/2864794.js?file=CodeIgniter.php"></script>
+<p>
+   This is fairly easy to do. First, navigate to your <code>/system/core</code> directory and open <code>CodeIgniter.php</code>. Look around line 260 and make the changes above. That's it. After you save the file, your controller file names will still be in their standard format (i.e. events.php). But, the class name will now be <code>Events_controller</code>.
+</p>
+<h3>Rails-like view setup</h3>
+<p>
+   Ruby on Rails and the guys at 37Signals have changed the way our industry runs. That being said, their framework is growing in popularity for a variety of reasons. One thing Rails does well is take the fuss out of which view files to load. Unless otherwise specified, it is simply the class named + the method name. Implementing the same functionality in CodeIgniter is fairly straight-forward. The first step is creating a file called <code>MY_Controller.php</code> in your <code>application/core</code> directory.
+</p>
+<script type="text/javascript" src="https://gist.github.com/2864761.js?file=MY_Controller.php"></script>
+<p>
+   Next, drop in the code above, that works in the following way. First, the <code>_remap</code> function allows you to customize the path that is taken when the page loads. After <code>_remap</code> calls the class method, it calls <code>render_files</code> to load the view files. 
+</p>
+<p>
+   The naming of the view file corresponds to the class name and method name. So, the index function in the Events controller will load <code>events/index.php</code>. Check out a couple of examples below.
+</p>
+<script type="text/javascript" src="https://gist.github.com/2864802.js?file=events.php"></script>
+<p>
+Last, we tend to follow a pattern of singulars / plurals here. That is, if you want view events, the path will be domain.com/events. If you want to view a specific event, the path will be domain.com/event/event-name. But, we still want it to reference the same Events controller. To do this, simply add the following line at the end of <code>config/routes.php</code>: <code>$route['event/(:any)'] = 'events/view/$1';</code>. 
+</p>
+<p>
+   Well, that wraps up a fairly long post. I hope someone's found it useful. Thanks for reading.
+</p>

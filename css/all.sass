@@ -10,14 +10,13 @@
 body
 	background: white
 	color: #333
+	color: #202022
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
 	margin: 0
 	padding: 0
 	font-size: 100%
 	line-height: 1.5
 	font-size: 1.25em
-
-
 
 h1, h2, h3, h4
 	margin: 1em 0 .5em
@@ -30,21 +29,41 @@ h1, h2, h3, h4
 h1
 	font-weight: 100
 	font-family: 'Pacifico'
-	color: #3e6b85
-	font-size: 52px
+	font-size: 48px
 	text-rendering: optimizeLegibility
 	-webkit-font-smoothing: antialiased
 	margin-bottom: 0
-	line-height: 56px
-	margin-top: 70px
+	border-left: 0
+	color: white
+	line-height: 40px
+	margin-top: 10px
+	padding-left: 2px
+	padding-right: 0
+	/*  width: 42px;
+
+.tpl-left
+	text-align: left
+	width: 42px
+	padding: 0
+	position: fixed
+	top: 0
+	left: 0
+	height: 100%
+	z-index: 2
+
+.left-links
+	text-align: left
+	list-style-type: none
+	margin-left: 16px
+	padding-left: 0
+	li
+		border-top: 1px dotted #ddd
+		padding: 5px
+		&:first-child
+			border: 0
 
 h2
 	margin-top: 0.5em
-
-h1
-	font-size: 2.25em
-
-h2
 	font-size: 1.75em
 
 h3
@@ -56,10 +75,9 @@ h4
 ul, ol
 	margin: 1em 0
 	padding-left: 40px
-	
 
 p, blockquote, .sub-title, ul, li, .h2sub
-	font-family: Georgia, Times, "Times New Roman", serif
+	font-family: Times, serif
 	-webkit-font-smoothing: antialiased
 	text-rendering: optimizeLegibility
 
@@ -68,7 +86,185 @@ p
 
 a
 	text-decoration: none
-	color: #6A9CCD
+	color: #357095
 
 html, body
 	height: 100%
+
+blockquote
+	margin: 0
+	margin-left: 15px
+	padding: 0.5em 35px 0.5em 35px
+	border-left: 1px solid #ddd
+	font-style: italic
+	color: #888
+	em
+		display: block
+
+.container
+	width: 800px
+	max-width: 96%
+	padding: 0 2%
+	margin: 0 auto
+	padding-bottom: 40px
+	padding-top: 1px
+	img
+		max-width: 100%
+
+.header
+	height: 220px
+	background: url('/assets/img/header_bg_2.jpg') no-repeat
+	background-position: 0 -100px
+	text-align: center
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	z-index: 1
+	h1
+		color: white
+		font-size: 75px
+	.sub-title
+		margin-top: 15px
+		font-size: 15px
+		color: white
+		font-style: italic
+
+.tpl-footer
+	border-top: 1px solid #ddd
+	margin-top: 50px
+	padding-top: 50px
+	background: #fafafa
+
+img.me
+	max-width: 100px
+	border-radius: 150px
+	border: 1px solid #ddd
+
+.tpl-footer
+	font-size: 0.95em
+	position: absolute
+	bottom: 0
+	left: 0
+	width: 100%
+	.left
+		float: left
+	.right
+		margin-left: 175px
+	h4
+		margin-top: 5px
+	p
+		margin-top: 10px
+		margin-bottom: 15px
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+	li
+		float: left
+		margin-left: 10px
+		border-left: 1px dotted #ddd
+		padding-left: 10px
+		&:first-child
+			margin-left: 0
+			border-left: 0
+			padding-left: 0
+	.content
+		width: 750px
+		max-width: 90%
+		margin: 0 auto
+		padding-bottom: 35px
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+	blockquote
+		margin-left: 5px
+		padding: 5px 10px
+	.header
+		position: relative
+		height: 92px
+		h1
+			font-size: 40px
+			margin-top: 0
+			padding-top: 15px
+		.sub-title
+			display: none
+	.tpl-container
+		margin-top: 0
+	.tpl-footer
+		position: relative
+		text-align: center
+		li
+			display: block
+			border: 0
+			margin: 0
+			margin-top: 5px
+			padding: 0
+			float: none
+		.left
+			float: none
+		.right
+			margin-left: 0
+
+.footnote
+	font-size: 0.85em
+	ul
+		list-style-type: none
+		padding: 0
+		margin: 0
+		margin-left: 15px
+	sup
+		padding-right: 5px
+
+.tw-small
+	display: none
+
+.footnote li
+	line-height: 1.4
+	text-indent: -10px
+	color: #777
+	font-style: italic
+
+.h2sub
+	font-style: italic
+	color: #444
+	margin-top: -18px
+
+.top-bar
+	padding: 15px 0
+	border-top: 10px solid #C85B5C
+	margin-bottom: 15px
+	border-bottom: 1px solid #eee
+
+.content
+	width: 800px
+	max-width: 96%
+	padding: 0 2%
+	margin: 0 auto
+
+h1
+	color: #202022
+	font-size: 28px
+	line-height: 26px
+	margin: 0
+	padding: 0
+
+.click
+	display: inline-block
+	zoom: 1
+	*display: inline
+	font-size: 33px
+	color: #D4D0D1
+	width: 45px
+	height: 45px
+	text-align: center
+	line-height: 40px
+	&:hover
+		color: white
+		background: #9ED9D8
+
+.top-bar .right
+	float: right
+	font-size: 15px
+	padding-top: 5px
+	a
+		padding-left: 15px
