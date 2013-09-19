@@ -6,4 +6,4 @@ relative_permalinks: false
 permalink: none
 
 url: "http://scottdover.github.io"
-baseurl: "/"
+baseurl: "/p"
