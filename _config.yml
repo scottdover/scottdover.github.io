@@ -2,7 +2,7 @@ name: Your New Jekyll Site
 markdown: redcarpet
 pygments: true
 
-relative_permalinks: false
+#relative_permalinks: false
 permalink: none
 
 url: "http://scottdover.github.io"
