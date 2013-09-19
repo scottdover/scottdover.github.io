@@ -1,0 +1,130 @@
+* {
+	margin: 0; padding: 0;
+}
+
+body {
+	background: #fafafa;
+	color: black;
+	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	margin: 0; padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+}
+
+/* PARAGRAPHS */
+h1, h2, h3, h4 {
+	margin: 1em 0 .5em; /* Titles should be close to the text they describe */
+	line-height: 1.25; /* Bigger text is often nicer with smaller line height */
+	font-weight: bold; /* Browser default. Use `normal` for less bulky titles */
+}
+
+h2 {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+li b,
+h1,h2,h3,h4,h5 {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	margin-bottom: 5px;
+	font-size: 46px;
+}
+
+li b {
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.tpl-header {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+
+h1 {
+
+}
+li b, h3 {
+	color: #39AC93;	
+	color: #284877;
+}
+h3 {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+h3 i {
+	font-size: 14px;
+	font-style: italic;
+	color: #777;
+	font-weight: normal;
+	padding-left: 5px;
+}	
+
+h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-style: italic;
+	font-weight: normal;
+}
+
+li b {
+	font-weight: bold;	
+	width: 60px;
+	text-align: right;
+	padding-right: 10px;
+}
+.tpl-header ul, .tpl-header li{
+	list-style: none;
+}
+
+p {
+	margin: 1em 0;
+	margin: 10px 0;
+}
+
+blockquote {
+	margin: 1em 40px; /* Same for all browsers - Customize or remove */
+}
+
+figure {
+	margin: 1em 0; /* Default in HTML5 spec: `1em 40px` */
+}
+
+.tpl-container {
+	width: 850px;
+	margin: 40px auto;
+}
+
+a {
+	text-decoration: none;
+	color: #6A9CCD;
+}
+
+
+
+.block {
+	margin-top: 20px;
+}
+
+.block .left {
+	float: left;
+}
+
+.block .padded-content {
+	margin-left: 236px;
+}
+
+.section {
+	margin-top: 15px;
+}
+
+img {
+	max-width: 120px;
+	float: right;
+	padding-top: 37px;
+}
