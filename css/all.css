@@ -300,7 +300,7 @@ h1 {
     display: none; }
   .big-floating-text.big-floating-text-black, .big-floating-text-black.big-floating-text-black {
     text-shadow: none;
-    color: black;
+    color: #333333;
     z-index: 998;
     display: block; }
 
