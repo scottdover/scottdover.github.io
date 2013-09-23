@@ -40,7 +40,7 @@ h1
 	margin-top: 10px
 	padding-left: 2px
 	padding-right: 0
-	/*  width: 42px;
+	
 
 .tpl-left
 	text-align: left
@@ -271,6 +271,9 @@ h1
 		padding-left: 15px
 
 
+
+// Stuff For Color post
+
 .fs-box-wrap
 	position: fixed
 	top: 0
@@ -278,3 +281,53 @@ h1
 	z-index: 999
 	width: 100%
 	height: 100%
+
+.big-floating-text, .big-floating-text-black
+	position: fixed
+	top: 185px - 50px + 6px
+	font-size: 130px
+	color: white
+	font-weight: bold
+	left: 100px
+	z-index: 9999
+	display: none
+	margin: 0
+	padding: 0
+	text-shadow: 0px 0px 10px #000
+	i
+		display: block
+		font-size: 60px
+		line-height: 15px
+		padding-left: 15px
+	>span
+		display: none
+	&.big-floating-text-black
+		text-shadow: none
+		color: #333
+		z-index: 998
+		display: block
+		top: 200px - 50px + 6px
+.top-boxes
+	position: fixed
+	top: 0
+	left: 0
+	z-index: 99999
+	h1
+		text-indent: -5px
+	h1 a 
+		color: white
+	h1, >a
+		display: inline-block
+		zoom: 1
+		*display: inline
+		vertical-align: top
+		color: white
+		margin: 0
+		padding: 0
+		width: 64px
+		height: 64px
+		line-height: 64px
+		text-align: center
+		// background: #202020
+	>a
+		// background: #ccc
