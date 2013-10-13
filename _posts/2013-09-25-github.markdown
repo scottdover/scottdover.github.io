@@ -1,0 +1,30 @@
+---
+layout: post
+title:  "5 reasons Github is better than shared hosting"
+date:   2013-09-25 20:05:38
+use_truncated_content: true
+no_index: true
+---
+
+I've recently moved from my Blue loving shared hosting (Bluehost) to Github pages and it's been quite a nice transition. My previous blog was about as slim as it could be without being static pages, but Jekyll has made a static generator that puts my little blogging experiment to shame<sup>1</sup>. So, I thought I'd put together a list (because everyone loves lists, right?) of reasons Github may be the better option for you.
+
+### 1. Speed
+
+Hosting your site on Github almost guarantees it'll load faster than the average shared hosting plan.   
+
+### 2. No fumbling with editors and uploaders
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+### 3. Jekyll gives you a perfect staging environment
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+### 4. Share your code with others
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+
+### 5. It's free
+
+
+If you have your own domain, and want a very, very lean blogging system, check it out on [Github](https://github.com/scottdover/StaticBlog).

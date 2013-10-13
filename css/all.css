@@ -325,3 +325,20 @@ h1 {
     height: 64px;
     line-height: 64px;
     text-align: center; }
+
+.google-map {
+  width: 850px;
+  height: 390px; }
+
+.google-map-wrapper {
+  width: 850px;
+  height: 350px;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-top: 20px; }
+
+body.wide .content, body.wide .container {
+  width: 850px; }
+
+p.center {
+  text-align: center; }
