@@ -102,7 +102,7 @@ blockquote {
     display: block; }
 
 .container {
-  width: 800px;
+  width: 650px;
   max-width: 96%;
   padding: 0 2%;
   margin: 0 auto;
@@ -238,7 +238,7 @@ img.me {
   border-bottom: 1px solid #eeeeee; }
 
 .content {
-  width: 800px;
+  width: 650px;
   max-width: 96%;
   padding: 0 2%;
   margin: 0 auto; }
