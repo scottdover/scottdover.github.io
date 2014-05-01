@@ -10,3 +10,5 @@ permalink: none
 
 #url: "http://scottdover.github.io/"
 baseurl: "/"
+paginate: 2
+paginate_path: "blog/page:num"

@@ -1,357 +1,77 @@
-.hamburger
-	display: block
-	width: 25px
-	height: 25px
-	span
-		margin-top: 4px
-		display: block
-		border-top: 4px solid #e6e6e6
+$blue: #2980b9
+$doc_width: 860px
+$highlight: #e74c3c
+
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
 
 body
-	background: white
-	color: #333
-	color: #202022
-	color: black
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-	margin: 0
-	padding: 0
-	font-size: 100%
-	line-height: 1.5
-	font-size: 1.25em
+	font-family: 'Source Sans Pro', sans-serif
 
-h1, h2, h3, h4
-	margin: 1em 0 .5em
-	line-height: 1.25
-	font-weight: bold
-	font-family: 'Open Sans', serif
-	-webkit-font-smoothing: antialiased
-	text-rendering: optimizeLegibility
-
-h1
-	font-weight: 100
-	font-family: 'Pacifico'
-	font-size: 48px
-	text-rendering: optimizeLegibility
-	-webkit-font-smoothing: antialiased
-	margin-bottom: 0
-	border-left: 0
-	color: white
-	line-height: 40px
-	margin-top: 10px
-	padding-left: 2px
-	padding-right: 0
-	
-
-.tpl-left
-	text-align: left
-	width: 42px
-	padding: 0
-	position: fixed
-	top: 0
-	left: 0
-	height: 100%
-	z-index: 2
-
-.left-links
-	text-align: left
+ul, li
 	list-style-type: none
-	margin-left: 16px
-	padding-left: 0
-	li
-		border-top: 1px dotted #ddd
-		padding: 5px
-		&:first-child
-			border: 0
-
-h2
-	margin-top: 0.5em
-	font-size: 1.75em
-
-h3
-	font-size: 1.45em
-
-h4
-	font-size: 1.25em
-
-ul, ol
-	margin: 1em 0
-	padding-left: 40px
-
-p, blockquote, .sub-title, ul, li, .h2sub
-	font-family: Times, serif
-	-webkit-font-smoothing: antialiased
-	text-rendering: optimizeLegibility
-
-p
-	margin: 1em 0
 
 a
 	text-decoration: none
-	color: #287FB4
-
-html, body
-	height: 100%
-
-blockquote
-	margin: 0
-	margin-left: 15px
-	padding: 0.5em 35px 0.5em 35px
-	border-left: 1px solid #ddd
-	font-style: italic
-	color: #999
-	em
-		display: block
-
-.container
-	width: 650px
-	max-width: 96%
-	padding: 0 2%
-	margin: 0 auto
-	padding-bottom: 40px
-	padding-top: 1px
-	img
-		max-width: 100%
-
-.header
-	height: 220px
-	background: url('/assets/img/header_bg_2.jpg') no-repeat
-	background-position: 0 -100px
-	text-align: center
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	z-index: 1
-	h1
-		color: white
-		font-size: 75px
-	.sub-title
-		margin-top: 15px
-		font-size: 15px
-		color: white
-		font-style: italic
-
-.tpl-footer
-	border-top: 1px solid #ddd
-	margin-top: 50px
-	padding-top: 50px
-	background: #fafafa
-
-img.me
-	max-width: 100px
-	border-radius: 150px
-	border: 1px solid #ddd
-
-.tpl-footer
-	font-size: 0.95em
-	position: absolute
-	bottom: 0
-	left: 0
-	width: 100%
-	.left
-		float: left
-	.right
-		margin-left: 175px
-	h4
-		margin-top: 5px
-	p
-		margin-top: 10px
-		margin-bottom: 15px
-	ul
-		list-style-type: none
-		padding: 0
-		margin: 0
-	li
-		float: left
-		margin-left: 10px
-		border-left: 1px dotted #ddd
-		padding-left: 10px
-		&:first-child
-			margin-left: 0
-			border-left: 0
-			padding-left: 0
-	.content
-		width: 750px
-		max-width: 90%
-		margin: 0 auto
-		padding-bottom: 35px
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
-	blockquote
-		margin-left: 5px
-		padding: 5px 10px
-	.header
-		position: relative
-		height: 92px
-		h1
-			font-size: 40px
-			margin-top: 0
-			padding-top: 15px
-		.sub-title
-			display: none
-	.tpl-container
-		margin-top: 0
-	.tpl-footer
-		position: relative
-		text-align: center
-		li
-			display: block
-			border: 0
-			margin: 0
-			margin-top: 5px
-			padding: 0
-			float: none
-		.left
-			float: none
-		.right
-			margin-left: 0
-
-.footnote
-	font-size: 0.85em
-	ul
-		list-style-type: none
-		padding: 0
-		margin: 0
-		margin-left: 15px
-	sup
-		padding-right: 5px
-
-.tw-small
-	display: none
-
-.footnote li
-	line-height: 1.4
-	text-indent: -10px
-	color: #999
-	font-style: italic
-
-.h2sub
-	font-style: italic
-	color: #444
-	margin-top: -18px
-
-.top-bar
-	padding: 15px 0
-	// border-top: 10px solid #e74c3c
-	background: #e74c3c
-	margin-bottom: 15px
-	border-bottom: 1px solid #eee
-
-.content
-	width: 650px
-	max-width: 96%
-	padding: 0 2%
-	margin: 0 auto
+	color: $blue
 
 h1
-	color: #202022
-	font-size: 28px
-	line-height: 26px
-	margin: 0
-	padding: 0
-	a
-		color: white
+	font-family: 'Pacifico'
+	text-rendering: optimizeLegibility
+	-webkit-font-smoothing: antialiased
+	font-weight: 200
+	font-size: 36px
 
-.top-bar .right a
-	color: white
-
-.click
-	display: inline-block
-	zoom: 1
-	*display: inline
-	font-size: 33px
-	color: #D4D0D1
-	width: 45px
-	height: 45px
-	text-align: center
-	line-height: 40px
-	&:hover
-		color: white
-		background: #9ED9D8
-
-.top-bar .right
-	float: right
-	font-size: 15px
-	padding-top: 5px
-	a
-		padding-left: 15px
-
-
-
-// Stuff For Color post
-
-.fs-box-wrap
-	position: fixed
-	top: 0
-	left: 0
-	z-index: 999
-	width: 100%
-	height: 100%
-
-.big-floating-text, .big-floating-text-black
-	position: fixed
-	top: 160px
-	font-size: 130px
-	color: white
-	font-weight: bold
-	left: 100px
-	z-index: 9999
-	display: none
-	margin: 0
-	padding: 0
-	text-shadow: 0px 0px 5px #000
-	i
-		display: block
-		font-size: 60px
-		line-height: 15px
-		padding-left: 15px
-	>span
-		display: none
-	&.big-floating-text-black
-		text-shadow: none
-		color: #333
-		z-index: 998
-		display: block
-		// top: 200px - 50px + 6px
-.top-boxes
-	position: fixed
-	top: 0
-	left: 0
-	z-index: 99999
-	h1
-		text-indent: -5px
-	h1 a 
-		color: white
-	h1, >a
-		display: inline-block
-		zoom: 1
-		*display: inline
-		vertical-align: top
-		color: white
-		margin: 0
-		padding: 0
-		width: 64px
-		height: 64px
-		line-height: 64px
-		text-align: center
-		// background: #202020
-	>a
-		// background: #ccc
-
-.google-map
-	width: 850px
-	height: 390px
-
-.google-map-wrapper
-	width: 850px
-	height: 350px
-	overflow: hidden
+.tpl-header .content,
+.tpl-container
+	max-width: $doc_width
 	margin: 0 auto
-	margin-top: 20px
 
-body.wide
-	.content, .container
-		width: 850px
-	
-p.center
-	text-align: center
+.tpl-header
+	background: $highlight
+	color: white
+	a
+		color: white
+	ul
+		float: right
+		li
+			float: left
+			padding: 5px 10px
+			padding-top: 20px
+
+		
+
+.hero
+	font-size: 30px
+	width: 780px
+	margin: 0 auto
+
+.hero-wrap
+	background: #ecf0f1
+	padding: 65px 0
+	border-top: 1px solid #c0392b
+	border-bottom: 1px solid #ddd
+
+.hero
+	color: #2c3e50
+	font-weight: 100
+	position: relative
+	-webkit-font-smoothing: antialiased
+	text-rendering: optimizeLegibility
+	font-size: 40px
+	>span
+		color: $highlight
+	i
+		font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif
+	a
+		color: #2c3e50
+		border-bottom: 1px dashed #ddd
+		&:hover
+			color: $blue
+	div.heading
+		font-size: 56px
+		color: #999
