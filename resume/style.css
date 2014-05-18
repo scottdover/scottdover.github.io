@@ -3,12 +3,13 @@
 }
 
 body {
-	background: #fafafa;
+	background: white;
 	color: black;
-	font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+	color: #202020;
+	font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
 	margin: 0; padding: 0;
 	font-size: 16px;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
 /* PARAGRAPHS */
@@ -40,7 +41,7 @@ li b {
 }
 
 .tpl-header {
-	border-bottom: 1px solid #ddd;
+	border-bottom: 3px double #eee;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
 }
@@ -49,8 +50,7 @@ h1 {
 
 }
 li b, h3 {
-	color: #39AC93;	
-	color: #284877;
+	color: #e74c3c;	
 }
 h3 {
 	margin-top: 0;
@@ -69,7 +69,8 @@ h4 {
 	margin-top: 0;
 	margin-bottom: 0;
 	font-style: italic;
-	font-weight: normal;
+	font-weight: 200;
+	margin-top: -3px;
 }
 
 li b {
@@ -102,7 +103,7 @@ figure {
 
 a {
 	text-decoration: none;
-	color: #6A9CCD;
+	color: #e74c3c;
 }
 
 
@@ -127,4 +128,24 @@ img {
 	max-width: 120px;
 	float: right;
 	padding-top: 37px;
+}
+
+.address-line {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 200;
+	margin-top: -10px;
+}
+
+.address-line span {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #e74c3c;
+	padding: 0 5px;
+}
+
+@media all {
+	.page-break	{ display: none; }
+}
+
+@media print {
+	.page-break	{ display: block; page-break-before: always; }
 }

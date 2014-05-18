@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+   -moz-box-sizing: border-box; 
+   -webkit-box-sizing: border-box; 
+   box-sizing: border-box;
+}
+.hero {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 28px;
+  color: #2c3e50;
+  font-weight: 100;
+  width: 490px;
+  position: relative;
+  margin: 100px auto;
+}
+i {
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+.hero > span {
+  color: #e74c3c;
+  /*text-transform: uppercase;*/
+}
+.hero div:first-child {
+  color: #bdc3c7;
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+.image {
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  -moz-border-radius: 120px;
+  -webkit-border-radius: 120px;
+  overflow: hidden;
+  left: -165px;
+  position: absolute;
+  /*bottom: 14px;*/
+  top: 124px;
+}
+.image img {
+  max-width: 100%;
+}
+.hero a {
+  text-decoration: none;
+  border-bottom: 1px dashed #ddd;
+  color: #2c3e50;
+}
+.hero a:hover {
+  color: #2980b9;
+  border-bottom: 1px solid white;
+}
+
+.icons, .icons li {
+  list-style-type: none;
+}
+.hero .icons a {
+  border: 0;
+}
+
+.icons {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.icons li {
+  width: 33%;
+  float: left;
+}
+.icons a {
+  position: relative;
+}
+.icons a span {
+  font-size: 14px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  display: block;
+  width: 80px;
+  margin-left: -40px;
+  text-align: center;
+  display: none;
+}
+
+.icons a:hover span {
+  display: block;
+}
+h1 {
+  display: none;
+}

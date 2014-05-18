@@ -1,10 +1,30 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 
-{% for post in site.posts %}
-	{% if post.no_index %} {% continue %} {% endif %}
-	<h2> {{ post.title }} </h2>
-	{{ post.content }}
-	{% break %}
-{% endfor %}
+  <title>ScottDover</title>
+</head>
+<body>
+  <h1>Scott Dover</h1>
+  <div class="hero">
+    <div>Hi,</div>
+    <div class="image">
+      <img src="/img/me.png" alt="Scott Dover" />
+    </div>
+    I'm <span>Scott Dover</span>. I'm a developer living in Winston Salem, NC 
+    and working for <a href="http://pursuehappy.com" target="_blank">Pursuit Of Happiness</a>. I create things for the 
+    web <i>&amp;</i> iOS.
+    <ul class="icons">
+      <li><a href="http://twitter.com/scottdover" target="_blank"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
+      <li><a href="http://github.com/scottdover" target="_blank"><i class="fa fa-github"></i><span>Github</span></a></li>
+      <li><a href="/blog"> <i class="fa fa-comment"></i>
+        <span>Blog</span></a></li>
+    </ul>
+    <div style="clear:both;"></div>
+  </div><!-- /hero -->
+</body>
+</html>

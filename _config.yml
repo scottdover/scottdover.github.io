@@ -2,8 +2,6 @@ keywords: "ScottDover, technology, programming, winston salem, nc, php, ruby, th
 description: "A blog on programming, technology, theology and every topic that strikes my interest"
 
 name: "ScottDover"
-markdown: redcarpet
-pygments: true
 
 #relative_permalinks: false
 permalink: none
