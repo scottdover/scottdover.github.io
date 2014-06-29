@@ -1,10 +1,13 @@
+# Site settings
+title: ScottDover
+email: sdover102@gmail.com
 keywords: "ScottDover, technology, programming, winston salem, nc, php, ruby, theology"
 description: "A blog on programming, technology, theology and every topic that strikes my interest"
+baseurl: ""
+url: "http://yourdomain.com"
 
-name: "ScottDover"
-
-#relative_permalinks: false
-permalink: none
-
-#url: "http://scottdover.github.io/"
-baseurl: "/"
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
+paginate: 3
+paginate_path: "page:num"
