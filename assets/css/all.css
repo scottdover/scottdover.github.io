@@ -2063,6 +2063,11 @@ iframe {
   .pagination span.previous, .pagination span.next {
     color: #aaaaaa; }
 
+.disclaimer {
+  font-style: italic; }
+  .disclaimer i {
+    vertical-align: middle; }
+
 @media only screen and (max-width: 1018px) {
   .web-wrapper img {
     margin: 0;
