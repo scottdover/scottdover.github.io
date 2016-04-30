@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  {% include header.html %}
+  <body class="{% if page.bodyClass %}{{ page.bodyClass }}{% endif %}">
+    <div class="header">
+      <a href="/all">Archive</a>
+      <a href="/resume">Resume</a>
+      <a target="_blank" href="https://twitter.com/scottdover">@scottdover</a>
+    </div>
+    <div class="container">
+      <h1><a href="/">ScottDover</a></h1>
+      <div class="content">
+        {{ content }}
+      </div><!-- /content -->
+    </div><!-- /container -->
+  </body>
+</html>

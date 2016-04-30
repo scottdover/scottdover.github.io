@@ -1,0 +1,151 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 200;
+    color: #40404f;
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+h1 {
+    font-size: 1.4rem;
+    color: #8e44ad;
+}
+
+h2, h3 {
+    font-size: 2.8rem;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+del {
+    color: #aaa;
+    font-style: italic;
+}
+
+.post-archive {}
+    .post-archive h2 {
+        margin-left: -7px;
+    }
+    .post-archive a {
+        padding-left: 5px;
+        display: block;
+        border-left: 2px solid white;
+    }
+        .post-archive a:hover {
+            border-left: 2px solid #8e44ad;
+        }
+
+.header {
+    font-size: 14px;
+    border-top: 2px solid #999;
+}
+    .header a {
+        padding: 10px;
+        display: inline-block;
+        color: #999;
+        text-decoration: none;
+    }
+        .header a:hover {
+            color: #8e44ad;
+            border-top: 2px solid #8e44ad;
+            margin-top: -2px;
+        }
+
+.container {
+    max-width: 44em;
+    padding: 1em;
+}
+    .container h2 a {
+        color: #40404f;
+    }
+        .container h2 a:hover {
+            text-decoration: none;
+            color: #8e44ad;
+        }
+    .container a {
+        color: #8e44ad;
+        text-decoration: none;
+    }
+        .container a:hover {
+            text-decoration: underline;
+        }
+
+body.resume {
+    font-size: 14px;
+    line-height: 1.4;
+}
+    .resume ul {
+        padding-left: 25px;
+        margin-top: -10px;
+    }
+    .resume h1 {
+        font-size: 24px;
+        line-height: 1.0;
+    }
+    .resume .header {
+        display: none;
+    }
+    .resume .container {
+        max-width: 850px;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .resume h3 {
+        font-size: 20px;
+    }
+        .resume h3 span {
+            color: #999;
+        }
+    .resume h2 {
+        border-bottom: 1px solid #8e44ad;
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+    .resume em {
+        display: block;
+        margin-top: -17px;
+        font-size: 14px;
+        padding-left: 1px;
+    }
+    .resume .left-content, .resume .right-content {
+        float: left;
+    }
+    .resume .left-content {
+        width: 58%;
+    }
+    .resume .right-content {
+        width: 42%;
+        padding-left: 35px;
+    }
+    .resume .end {
+        color: #999;
+    }
+
+@media (min-width: 600px) {
+    .container {
+        padding: 3rem 4em;
+    }
+}

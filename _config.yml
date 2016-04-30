@@ -1,0 +1,16 @@
+title: Scott Dover
+email: sdover102@gmail.com
+description: >
+    The personal blog of Scott Dover
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://scottdover.com" # the base hostname & protocol for your site
+twitter_username: scottdover
+github_username:  scottdover
+permalink: '/:title'
+
+# Build settings
+# markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
