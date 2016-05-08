@@ -4,11 +4,11 @@
     start: November 2014
     end: Present
     achievement: |
-        Research Square is a company that helps researchers more effectively communicate their work.
+        Research Square is a company that helps academic researchers more effectively communicate their work.
         Being a software engineer at RS, I've had the opportunity to work on projects in many
-        different areas of the tech stack. Some recent examples are:
+        different areas of the technology stack. Some recent examples are:
 
-        - Working to optimize our apps to increase conversions for our Chinese users
+        - Working to optimize our applications to increase conversions for our Chinese users
         - Working with Jekyll and POEditor to provide a way to seamlessly localize our front-end sites
         - Creating a client-side search to provide dynamic search results for our static sites
         - Creating a Handlebars templating framework to work with Redux in support of our users with legacy browsers
@@ -18,10 +18,10 @@
     start: June 2013
     end: November 2014
     achievement: |
-        Everwondr is an events management network behind many of the CVBs in North Carolina.
-        At Everwondr, I was the sole technical hire in charge of every aspect of the software
-        development cycle. One notable achievement was implementing a way to easily incorporate
-        our events into any of our partner sites regardless of technology stack.
+        Everwondr is an events management network behind many of the Convention and Visitor Bureaus
+        in North Carolina. At Everwondr, I was the sole technical hire in charge of every aspect
+        of the software development cycle. One notable achievement was implementing a way to easily
+        incorporate our events into any of our partner sites regardless of technology stack.
 -
     company: MadMonk Interactive
     title: Full-Stack Developer
