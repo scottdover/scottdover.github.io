@@ -8,9 +8,3 @@ url: "http://scottdover.com" # the base hostname & protocol for your site
 twitter_username: scottdover
 github_username:  scottdover
 permalink: '/:title'
-
-# Build settings
-# markdown: kramdown
-markdown: redcarpet
-redcarpet:
-  extensions: ["strikethrough"]

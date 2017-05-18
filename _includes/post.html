@@ -1,0 +1,11 @@
+<div class="post-wrapper">
+    <h2 style="display:none;">{{ include.post.title }}</h2>
+    <div class="date-line">
+        <span class="date">{{ include.post.date | date: '%Y.%m.%d' }}</span>
+        &middot;
+        <a href="{{ include.post.url }}">link</a>
+    </div>
+    <div class="post-content">
+        {{ include.post.content | makdownify }}
+    </div>
+</div>
