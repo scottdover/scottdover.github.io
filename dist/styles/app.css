@@ -23,6 +23,18 @@ body {
     color: #2C194D;
 }
 
+blockquote {
+    border-left: 2px solid #34989D;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+.post-content blockquote p:first-child::first-line {
+    color: inherit;
+    font-weight: inherit;;
+    text-decoration: none;
+}
+
 .date-line {
     font-size: 14px;
     color: #777;
@@ -124,6 +136,7 @@ body.resume {
         max-width: 850px;
         padding: 15px;
         margin: 0 auto;
+        padding-bottom: 0;
     }
     .resume h3 {
         font-size: 20px;

@@ -3,6 +3,6 @@ layout: default
 ---
 <div class="post-list">
     {% for post in site.posts %}
-      {% include post.html post=post %}
+      {% unless post.unlisted %}{% include post.html post=post %}{% endunless %}
     {% endfor %}
 </div>
