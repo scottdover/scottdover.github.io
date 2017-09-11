@@ -1,8 +1,0 @@
----
-layout: default
----
-<div class="post-list">
-    {% for post in site.posts %}
-      {% unless post.unlisted %}{% include post.html post=post %}{% endunless %}
-    {% endfor %}
-</div>
