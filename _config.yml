@@ -1,5 +1,4 @@
 permalink: /:title/
-source: app
 markdown: kramdown
 exclude:
     - node_modules

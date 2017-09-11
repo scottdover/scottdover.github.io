@@ -5,8 +5,8 @@ const env = process.env.NODE_ENV || 'production';
 const path = require('path');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const buildPath = path.resolve(__dirname, 'app', 'dist');
-const assetsPath = path.resolve(__dirname, 'app', 'assets');
+const buildPath = path.resolve(__dirname, 'dist');
+const assetsPath = path.resolve(__dirname, 'assets');
 
 const babelOptions = {
     presets: [
