@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div class="container bio">
+            <h2>Hi, I'm Scott! I'm a software engineer in Asheville, NC.</h2>
+            <p>
+                I currently work at <a href="https://researchsquare.com" target="_blank">Research Square</a>, a company on a mission to help researchers
+                communicate their work more effectively. I do life with my wife and my 3yr old, Maddie. I'm
+                no ninja, rockstar, or wizard. I'm just an experienced engineer with a consistent record of getting
+                things done.
+            </p>
+        </div>
+        <div class="container">
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </body>
+</html>

@@ -1,10 +1,13 @@
-title: Scott Dover
-email: sdover102@gmail.com
-description: >
-    The personal blog of Scott Dover
+permalink: /:title/
+source: app
+markdown: kramdown
+destination: docs
+exclude:
+    - node_modules
+    - package.json
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://scottdover.com" # the base hostname & protocol for your site
-twitter_username: scottdover
-github_username:  scottdover
-permalink: '/:title'
+# Site settings
+url: ""
+baseurl: ""
+
+title: "Scott Dover"

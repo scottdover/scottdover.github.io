@@ -1,0 +1,185 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    font-family: 'Khula', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 1.063rem;
+    line-height: 1.56;
+    color: #40404f;
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.post-content p:first-child::first-line {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #2C194D;
+}
+
+blockquote {
+    border-left: 2px solid #34989D;
+    margin-left: 0;
+    padding-left: 1em;
+}
+
+.post-content blockquote p:first-child::first-line {
+    color: inherit;
+    font-weight: inherit;;
+    text-decoration: none;
+}
+
+.date-line {
+    font-size: 14px;
+    color: #777;
+    font-weight: bold;
+}
+
+.date-line a {
+    color: #555;
+}
+
+p {
+    margin-bottom: 1.6em;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 200;
+    max-width: 190px;
+}
+
+h1 span {
+    display: none;
+}
+
+h1 a {
+    color: #34989D;
+}
+
+h2, h3 {
+    font-size: 2.8rem;
+    font-weight: 200;
+    line-height: 1.2;
+}
+
+.footer {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+del {
+    color: #aaa;
+    font-style: italic;
+}
+
+.header {
+    font-size: 14px;
+    border-top: 2px solid #999;
+    margin-bottom: -1.3rem;
+}
+    .header a {
+        padding: 10px;
+        display: inline-block;
+        color: #999;
+        text-decoration: none;
+    }
+        .header a:hover {
+            color: #34989D;
+            border-top: 2px solid #34989D;
+            margin-top: -2px;
+        }
+
+.container {
+    max-width: 44em;
+    padding: 1em;
+}
+    .container h2 a {
+        color: #40404f;
+    }
+        .container h2 a:hover {
+            text-decoration: none;
+            color: #34989D;
+        }
+    .container a {
+        color: #34989D;
+        text-decoration: none;
+    }
+        .container a:hover {
+            text-decoration: underline;
+        }
+
+body.resume {
+    font-size: 14px;
+    line-height: 1.35;
+}
+    .resume ul {
+        padding-left: 25px;
+        margin-top: -10px;
+    }
+    .resume h1 {
+        font-size: 24px;
+        line-height: 1.0;
+        display: block;
+    }
+    .resume .header {
+        display: none;
+    }
+    .resume .container {
+        max-width: 850px;
+        padding: 15px;
+        margin: 0 auto;
+        padding-bottom: 0;
+    }
+    .resume h3 {
+        font-size: 20px;
+    }
+        .resume h3 span {
+            color: #999;
+        }
+    .resume h2 {
+        border-bottom: 1px solid #34989D;
+        font-size: 24px;
+        font-weight: 600;
+        padding-bottom: 5px;
+    }
+    .resume em {
+        display: block;
+        margin-top: -17px;
+        font-size: 14px;
+        padding-left: 1px;
+    }
+    .resume .left-content, .resume .right-content {
+        float: left;
+    }
+    .resume .left-content {
+        width: 58%;
+    }
+    .resume .right-content {
+        width: 42%;
+        padding-left: 35px;
+    }
+    .resume .end {
+        color: #999;
+    }
+
+.post-list .post-wrapper {
+    margin-top: 2.5rem;
+}
+
+.post-list .post-wrapper:first-child {
+    margin-top: 0;
+}
+
+@media (min-width: 600px) {
+    .container {
+        padding: 3rem 4em;
+    }
+}

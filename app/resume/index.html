@@ -1,0 +1,57 @@
+---
+---
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link href="https://fonts.googleapis.com/css?family=Khula:300,400,600" rel="stylesheet">
+        <link rel="stylesheet" href="legacy.css">
+        <title>Resume | Scott Dover</title>
+    </head>
+    <body class="resume">
+        <div class="container">
+            <h1><a href="/">Scott Dover</a></h1>
+            <div class="content">
+                <div class="left-content">
+                    <h2>Work Experience</h2>
+                    {% for job in site.data.jobs %}
+                        <h3>{{job.company}}<span> / {{job.title}}</span></h3>
+                        <em>{{job.start}} - {{job.end}}</em>
+                        <p class="achievement">{{job.achievement | markdownify }}</p>
+                    {% endfor %}
+                </div>
+                <div class="right-content">
+                    <h2>Education</h2>
+                    {% for edu in site.data.edu %}
+                        <h3>{{edu.degree}}</h3>
+                        <em>{{edu.name}}, {{edu.location}}</em>
+                        <div class="end">graduated {{edu.end}}</div>
+                    {% endfor %}
+
+                    <h2>Recognitions</h2>
+                    <p>These are awards / recognitions received during my career at Research Square</p>
+                    <ul>
+                        <li>Q1 &amp; Q4, 2015 - Culture Champion Award</li>
+                        <li>Q2, 2015 - Dev Tasks Bronze Milestone (100 tasks closed)</li>
+                        <li>Q1, 2016 - Dev Tasks Silver Milestone (250 tasks closed)</li>
+                    </ul>
+
+                    <h2>Skills / Expertise</h2>
+                    <p>
+                        This list of skills and paradigms used is from most frequent to least frequent
+                        use
+                    </p>
+                    <ul>
+                        {% for skill in site.data.skills %}
+                            <li>{{ skill }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div class="clearfix"></div>
+                <div class="footer">
+                    &ndash; 14 Lamar Avenue, Asheville, NC 28803 / 864.884.4098  / sdover102@gmail.com &ndash;
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
