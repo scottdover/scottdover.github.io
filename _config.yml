@@ -1,7 +1,6 @@
 permalink: /:title/
 source: app
 markdown: kramdown
-destination: docs
 exclude:
     - node_modules
     - package.json
