@@ -1,0 +1,18 @@
+---
+layout: index
+---
+<h2>Occasionally, I write&hellip;</h2>
+<div class="cards">
+    {% for post in site.posts %}
+        {% unless post.unlisted %}
+            <div class="card-wrapper">
+                <div>
+                    <div class="date">{{ post.date | date: '%Y.%m.%d' }}</div>
+                    <header>{{ post.title }}</header>
+                    <p>{{ post.excerpt }}</p>
+                    <footer><a href="{{ post.url }}">Read more</a></footer>
+                </div>
+            </div>
+        {% endunless %}
+    {% endfor %}
+</div>

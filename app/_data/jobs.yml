@@ -1,0 +1,42 @@
+-
+    company: Research Square
+    title: Software Engineer
+    start: November 2014
+    end: Present
+    achievement: |
+        Research Square is a company that helps academic researchers more effectively communicate their work.
+        At Research Square, I'm a software engineer and architect for our researcher application. Here are a few
+        ways I've served Research Square recently.
+
+        - Worked to convert our legacy build process (a combination of grunt, bower, assetify, yui compressor, etc)
+        to webpack
+        - Created a handlebars templating framework to work with Redux, to give developers the ability to advance
+        their skills while simulatenously supporting Internet Explorer 7+
+        - Centralized four versions of our cart into a single cart process that addresses the needs of our partners
+        and researchers
+        - Worked with management to deprecate Internet Explorer 7 & 8, in order for React to become a
+        feasible technology our developers use
+        - Converted our handlebars-redux code to React, and am currently in the process of converting our
+        legacy code into a single-page React / Redux powered application
+        - Added javascript unit testing to our code base, and have been a continuing advocate to encourage
+        our team to test their code
+        - Created a pull request bot (posts PRs to Slack) as well as an accompanying UI to ease the transition
+        of our team from Phabricator to Github
+
+-
+    company: EverWondr
+    title: Full-Stack Developer
+    start: June 2013
+    end: November 2014
+    achievement: |
+        Everwondr is an events management platform serving Convention and Visitor Bureaus throughout
+        the state of North Carolina. At Everwondr, I was the sole developer responsible for
+        creating and maintaining the platform.
+-
+    company: MadMonk Interactive
+    title: Full-Stack Developer
+    start: May 2011
+    end: June 2013
+    achievement: |
+        I was a full stack developer at MadMonk Interactive, a consultancy primary focused on building
+        websites and applications for non-profits in and around Greensboro, NC.

@@ -1,3 +1,5 @@
+node_modules
+public/dist
 _site
 .DS_Store
-.jekyll-metadata
+app/.jekyll-metadata
