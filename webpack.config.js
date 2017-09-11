@@ -55,9 +55,7 @@ module.exports = {
             filename: '[name].css',
             allChunks: true
         })
-    ].concat(env === 'production' ? [] : [
-        new webpack.optimize.UglifyJsPlugin(),
-    ]),
+    ],
     resolve: {
         extensions: ['.js', '.jsx', '.json']
     }
