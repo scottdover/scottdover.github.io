@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            * { padding: 0; margin: 0;}
+            canvas {
+                background: black;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas" width="1000" height="900" style="border:1px solid #ddd;"></canvas>
+        <script type="text/javascript">
+            const canvas = document.querySelector('#canvas');
+            const ctx = canvas.getContext('2d');
+
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            let circleX = 0;
+            let dirX = 1;
+            let circleY = 0;
+            let dirY = 1;
+
+            const randNum = (min = 0, max = 255) => Math.random() * (max - min) + min;
+
+            class BounceStrategy {
+                constructor({ width, height }, dirX = 1, dirY = 1, deltaX = 2, deltaY = 2) {
+                    this.width = width;
+                    this.height = height;
+                    this.dirX = dirX;
+                    this.dirY = dirY;
+                    this.deltaX = deltaX;
+                    this.deltaY = deltaY;
+                }
+
+                update(pos) {
+                    if (pos.x >= this.width || pos.x <= 0) this.dirX *= -1;
+                    if (pos.y >= this.height || pos.y <= 0) this.dirY *= -1;
+
+                    return {
+                        x: pos.x + this.dirX * this.deltaX,
+                        y: pos.y + this.dirY * this.deltaY,
+                    };
+                }   
+            }
+
+            class Ball {
+                constructor(pos, strategy) {
+                    this.pos = pos;
+                    
+                    this.fillColor = `rgb(${randNum()}, ${randNum()}, ${randNum()})`;
+                    
+                    this.strategy = strategy;
+                    this.bezierCurveValues = [0, 0, randNum(), randNum(), 0, 0];
+                }
+
+                draw(canvas, ctx) {
+                    ctx.beginPath();
+                    ctx.fillStyle = this.fillColor;
+                    ctx.arc(this.pos.x,this.pos.y, 10, 0, 2 * Math.PI);
+                    ctx.fill();
+                    ctx.strokeStyle = this.fillColor;
+                    ctx.bezierCurveTo(...this.bezierCurveValues);
+                    ctx.stroke();
+                    ctx.closePath();
+
+                    this.pos = this.strategy.update(this.pos);
+                }
+            }
+
+            const balls = Array.from({ length: 50 }).map((el, i) => new Ball(
+                { x: randNum(0, i + 10), y: randNum(0, i + 10) },
+                new BounceStrategy(
+                    canvas,
+                    i % 2 === 0 ? 1 : -1,
+                    i % 2 === 0 ? -1 : 1,
+                    randNum(1, 5),
+                    randNum(1, 5)
+                )
+            ));
+
+            setInterval(() => {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                balls.forEach(ball => ball.draw(canvas, ctx));
+            }, 5);
+        </script>
+    </body>
+</html>
