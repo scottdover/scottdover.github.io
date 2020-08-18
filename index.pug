@@ -1,0 +1,39 @@
+doctype html
+head
+    title Scott Dover
+    link(rel='stylesheet' href='./src/style.scss')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+body
+    .outer-container.main-content
+        .container
+            h1.logo
+                a.brand(href='/')
+                    | SD
+            h2
+                | #[b Hi there!] I&apos;m Scott Dover, a software engineer at
+                | #[a(href="https://researchsquare.com" target="_blank" rel="noopener noreferrer") Research Square],
+                | a company on a mission to make research publication faster and fairer for everyone.
+            p.intro
+                | At work, I get to collaborate with some great folks, and usually find myself filling the gaps on my
+                | team or working on big, hairy problems stretched out over a long period of time. Outside of work,
+                | you’ll find me pedaling on a bike listening to Beyoncé, volunteering with the local LGBT center,
+                | playing the piano, or playing with the coolest kiddo I know.
+            ul
+                li #[a(href="#culture-nominations") Kind words from co-workers]
+                li #[a(href="https://scottdover.com/resume/" target="_blank" rel="noopener noreferrer") Resume]
+                li #[a(href="https://www.instagram.com/flawedrobot/" target="_blank" rel="noopener noreferrer") Instagram]
+                li #[a(href="https://www.strava.com/athletes/52246666" target="_blank" rel="noopener noreferrer") Strava]
+    .culture-noms
+        .logo-wrapper
+            a.close(href='/') &times;
+            h1.logo
+                a.brand(href='/')
+                    | SD
+        - var i = 0;
+        each cultureNomGroup in cultureNoms
+            .row
+                each cultureNom in cultureNomGroup
+                    .card(class='card-' + (i++ % 7))
+                        blockquote= cultureNom
+    script(type="text/javascript", src="./src/index.js")
+
