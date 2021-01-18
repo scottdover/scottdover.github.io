@@ -13,8 +13,10 @@ body {
     margin: 0;
 }
 
-.clearfix {
-    clear: both;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .post-content p:first-child::first-line {
@@ -80,23 +82,6 @@ del {
     font-style: italic;
 }
 
-.header {
-    font-size: 14px;
-    border-top: 2px solid #999;
-    margin-bottom: -1.3rem;
-}
-    .header a {
-        padding: 10px;
-        display: inline-block;
-        color: #999;
-        text-decoration: none;
-    }
-        .header a:hover {
-            color: #34989D;
-            border-top: 2px solid #34989D;
-            margin-top: -2px;
-        }
-
 .container {
     max-width: 44em;
     padding: 1em;
@@ -125,21 +110,19 @@ body.resume {
         margin-top: -10px;
     }
     .resume h1 {
-        font-size: 24px;
+        font-size: 38px;
         line-height: 1.0;
         display: block;
     }
-    .resume .header {
-        display: none;
-    }
     .resume .container {
-        max-width: 850px;
+        max-width: 960px;
         padding: 15px;
         margin: 0 auto;
         padding-bottom: 0;
     }
     .resume h3 {
         font-size: 20px;
+        font-weight: bold;
     }
         .resume h3 span {
             color: #999;
@@ -160,27 +143,19 @@ body.resume {
         float: left;
     }
     .resume .left-content {
-        width: 40%;
+        width: 60%;
     }
     .resume .right-content {
-        width: 50%;
+        width: 40%;
         padding-left: 35px;
     }
     .resume .end {
         color: #999;
     }
-    .education-wrapper {
-        margin-top: -20px;
-    }
     .education-wrapper::after {
         content: "";
         display: table;
         clear: both;
-    }
-    .education-wrapper > div {
-        float: left;
-        width: 40%;
-        padding-right: 25px;
     }
 
 .post-list .post-wrapper {
@@ -189,6 +164,24 @@ body.resume {
 
 .post-list .post-wrapper:first-child {
     margin-top: 0;
+}
+ul.skills {
+    padding-top: 0.35em;
+    list-style-type: none;
+    padding-left: 0;
+}
+    .skills li {
+        margin-top: 1em;
+    }
+
+.references {
+    padding: 10px;
+    background: #efefef;
+}
+
+.header .contact {
+    float: right;
+    text-align: right;
 }
 
 @media (min-width: 600px) {
