@@ -4,3 +4,4 @@ public/dist
 _site
 .DS_Store
 .jekyll-metadata
+.nothing
