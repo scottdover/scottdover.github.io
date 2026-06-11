@@ -204,6 +204,10 @@ ul.skills {
     margin-top: 0;
 }
 
+.achievement ul {
+    padding-top: 1.6em;
+}
+
 @media (min-width: 600px) {
     .container {
         padding: 3rem 4em;
